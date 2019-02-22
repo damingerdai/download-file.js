@@ -1,0 +1,15 @@
+{
+  "name": "downloadfile",
+  "version": "0.0.1",
+  "description": "downloadFile",
+  "main": "lib/downloadFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rollup -c"
+  },
+  "keywords": [
+    "downloadFile"
+  ],
+  "author": "arthur ming",
+  "license": "ISC"
+}

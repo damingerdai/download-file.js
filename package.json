@@ -5,11 +5,15 @@
   "main": "lib/downloadFile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rollup -c"
+    "start": "rollup -c",
+    "build": "rollup --config rollup.config.prod.js"
   },
   "keywords": [
     "downloadFile"
   ],
   "author": "arthur ming",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-uglify": "^6.0.2"
+  }
 }

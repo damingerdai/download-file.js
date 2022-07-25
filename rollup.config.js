@@ -1,4 +1,5 @@
 import { uglify } from "rollup-plugin-uglify";
+import { minify } from 'rollup-plugin-esbuild'
 
 export default [
   {
@@ -18,7 +19,7 @@ export default [
       sourcemap: true,
     },
     plugins: [
-      uglify({
+      minify({
         sourcemap: true,
       }),
     ],

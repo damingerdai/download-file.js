@@ -1,4 +1,3 @@
-
 export function downloadFile(sUrl) {
 
     //iOS devices do not support downloading. We have to inform user about this.

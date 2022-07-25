@@ -1,8 +1,26 @@
-export default {
-    input: 'src/index.js',
+import { uglify } from "rollup-plugin-uglify";
+
+export default [
+  {
+    input: "src/index.js",
     output: {
-      file: 'lib/downloadFile.js',
-      format: 'iife',
-      name: 'downloadFile'
-    }
-  };
+      file: "lib/downloadFile.js",
+      format: "iife",
+      name: "downloadFile",
+    },
+  },
+  {
+    input: "src/index.js",
+    output: {
+      file: "lib/downloadFile.min.js",
+      format: "iife",
+      name: "downloadFile",
+      sourcemap: true,
+    },
+    plugins: [
+      uglify({
+        sourcemap: true,
+      }),
+    ],
+  },
+];
